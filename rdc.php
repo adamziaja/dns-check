@@ -4,7 +4,7 @@ echo "https://code.google.com/p/dns-check/\n";
 echo "(C) 2013 Adam Ziaja <adam@adamziaja.com> http://adamziaja.com\n";
 require_once('Net/DNS2.php'); // http://code.google.com/p/netdns2/
 $domain = $argv[1];
-foreach (gethostbynamel($domain) as $ip) { // Round-robin DNS
+foreach (gethostbynamel($domain) as $ip) {
     $arpa = implode('.', array_reverse(explode('.', $ip))) . '.in-addr.arpa';
     do {
         $dns_arpa = dns_get_record($arpa, DNS_NS);
@@ -21,7 +21,7 @@ foreach (gethostbynamel($domain) as $ip) { // Round-robin DNS
         }
         $dns_servers = array();
         foreach ($dns_records as $dns_record) {
-            foreach (gethostbynamel($dns_record['target']) as $ip) { // Round-robin DNS
+            foreach (gethostbynamel($dns_record['target']) as $ip) {
                 array_push($dns_servers, $ip);
             }
         }
