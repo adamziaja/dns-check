@@ -119,7 +119,6 @@ bxb22-vpn-cluster-1.cisco.com. 86400 IN A 198.135.0.165
 printer-lwr05-02-500-cx.cisco.com. 86400 IN A 64.100.94.8
 printer-lasvegas-64-101-99-14.cisco.com. 86400 IN A 64.101.99.14
 ```
-
 @ 2013-09-14 16:45 CEST reported to security@cisco.com, no answer
 
 ### dns-check for revDNS
