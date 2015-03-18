@@ -1,6 +1,6 @@
 #!/usr/bin/php -q
 <?php
-echo "https://code.google.com/p/dns-check/\n";
+echo "https://github.com/adamziaja/dns-check\n";
 echo "(C) 2013 Adam Ziaja <adam@adamziaja.com> http://adamziaja.com\n";
 require_once('Net/DNS2.php'); // http://code.google.com/p/netdns2/
 $domain = $argv[1];
