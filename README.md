@@ -9,14 +9,14 @@ $ sudo apt-get install php5-cli
 
 ```
 $ wget http://netdns2.googlecode.com/files/Net_DNS2-1.3.1.tgz && tar -zxvf Net_DNS2-1.3.1.tgz && cd Net_DNS2-1.3.1/
-$ git clone https://code.google.com/p/dns-check/ && mv dns-check/*.php .
+$ git clone https://github.com/adamziaja/dns-check && mv dns-check/*.php .
 ```
 
 ### dns check
 
 ```
 $ php dc.php gov.ml
-https://code.google.com/p/dns-check/
+https://github.com/adamziaja/dns-check
 (C) 2013 Adam Ziaja <adam@adamziaja.com> http://adamziaja.com
 
 217.64.97.50 (ciwara.sotelma.ml) AXFR gov.ml
@@ -125,7 +125,7 @@ printer-lasvegas-64-101-99-14.cisco.com. 86400 IN A 64.101.99.14
 
 ```
 $ php rdc.php beyondsecurity.com
-https://code.google.com/p/dns-check/
+https://github.com/adamziaja/dns-check
 (C) 2013 Adam Ziaja <adam@adamziaja.com> http://adamziaja.com
 
 4.202.207.67.in-addr.arpa
